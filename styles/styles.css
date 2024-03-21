@@ -1,0 +1,86 @@
+ /* Previous CSS with adjustments */
+
+ .js-todo-container {
+  max-height: 300px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+        
+ .check-btn.completed {
+  background-color: red; /* Change background color of check button when completed */
+  color: white; /* Change text color to white */
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.todo-container {
+  text-align: center;
+}
+.input-group {
+  margin-top: 20px;
+}
+.input-group input {
+  padding: 10px;
+  margin-right: 4px;
+}
+#show-todo-btn{
+  padding: 10px;
+}
+#add-todo-btn {
+  padding: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+li {
+
+  
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  position: relative; /* Ensure relative positioning for absolute children */
+}
+.due-date{
+
+  font-size: 0.8em;
+  color: #888;
+  flex-grow: 1; /* Allow due date to expand */
+}
+.check-btn, .delete-btn {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 10px;
+   margin-top: 10px;/* Add margin between buttons */
+}
+.completed .checkmark {
+
+background-color: red;
+ 
+}
+.checkmark {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #888;
+}
+.completed .task-text {
+  text-decoration: line-through;
+  color: #aaa;
+}
